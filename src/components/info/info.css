@@ -1,0 +1,82 @@
+.navigationInfo{
+    background-color: #20272C;
+    display: flex;
+    
+}
+.lista-specifikacija{
+    width: fit-content;
+}
+.lista-spec2 li{
+    font-family: 'Roboto'; 
+    font-size: 20px;
+    padding-bottom: 20px;
+
+}
+.lista-spec2 li:nth-child(1){
+    border-bottom: 3px solid #2a628b;
+}
+hr{
+    color: #2a628b !important;
+    opacity: 0.5 !important;
+ 
+    font-weight: bold !important;
+    border: 2px solid #2a628b !important;
+    border-radius: 10px !important;
+    margin-top: -19px !important;
+}
+.velicina-50{
+    font-size: 50px !important;
+}
+.Roboto-Condensed{
+    font-family: "Roboto Condensed" !important;
+}
+.main_Info{
+    background-color: #528CB7;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+.main_info_details{
+    
+    width: 250px;
+    justify-content: space-between;
+   
+}
+
+.main_info_details p{
+    width: 100%;
+   
+}
+.detail{
+    border-bottom: 1px solid #fff;
+}
+.map_div{
+    position: relative !important;
+}
+.dugmeMapa {
+    background-color: #528CB7;
+    padding: 10px;
+    border-radius: 40px;
+    margin: 10px;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #fff;
+}
+.dugmeMapa img{
+    border-radius: 50%;
+
+}
+.text-WeatherBlue{
+    color:#528CB7 !important;
+}
+.hour_forecast{
+    background-color: #528CB7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+}
+.hour_forecast_div{
+    border-top: 1px solid #fff;
+    width: 100%;
+}

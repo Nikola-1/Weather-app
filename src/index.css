@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto Condensed' !important;
+  color: #fff !important;
+  
+}
+p{
+  font-size: 16px;
+  font-family: 'Roboto';
+ 
+  margin: 0;
+}
+span{
+  font-size: 30px;
+}
+.TemperatureWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.temperature{
+  font-family: 'Roboto';
+  color: #fff;
+  
+}
+
+.navigation{
+    position: fixed;
+    top: 1%;
+    left: 5%;
+    z-index: 2;
+}
+.header{
+  background-image:url("./assets/img/header2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pretraga{
+  margin-top: 50px;
+  text-align: start;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom:2px solid rgba(255, 255, 255, 0.423);
+  color:rgb(255, 255, 255);
+  font-family: 'Roboto';
+  font-size: 18px;
+  width: 40vw;
+}
+.NewLocationBox{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height: fit-content;
+  width: fit-content;
+  z-index: 4;
+  padding: 20px;
+  backdrop-filter: blur(14px);
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow:  0 0 7px 0;
+}
+.NewLocationCountry{
+  color: #fff;
+}
+
+.ListOfCities{
+  display: grid;
+ grid-template-columns: repeat(2,1fr);
+ width: 720px;
+
+}
+.ListOCWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+.ListOCWrapper h3{
+  color: #0D5990 !important;
+  margin: 20px;
+ 
+}
+.City{
+  grid-row: span 2;
+  border-radius: 40px;
+ 
+  background-color: #0D5990;
+  margin-top: 30px;
+  
+  margin-left: 10px;
+}
+.City h3{
+  color: #A3D4F7 !important;
+  font-family: "Roboto Condensed";
+  margin: 0;
+  
+}
+.City:hover{
+  background-color: #084169;
+  cursor: pointer;
+}
+.pretraga::placeholder{
+  color: rgba(255, 255, 255, 0.829);
+  opacity: 1;
+}
+
+.AcrossTheWorldWrapper{
+  width: 720px;
+  margin: auto;
+}
+.AcrossTheWorldInfo{
+  background-color: #528CB7;
+  color: #fff;
+  border-radius: 40px;
+  margin-top: 30px !important;
+
+  padding-left:10px;
+}
+.AcrossTheWorldInfo:first-child{
+  margin-top: 100px !important;
+}
+.AcrossTheWorldInfo:hover{
+  background-color: #416f91;
+  cursor: pointer;
+}
+.AcrossTheWorldInfo:nth-last-child(1){
+  margin-bottom: 100px;
+}
+.AcrossTheWorldInfo i{
+  width: 30px;
+  height: 30px;
+
+}
+.AcrossTheWorldInfo h3{
+  margin: 0;
+
+}
+.NavFooter{
+  padding: 10px;
+  background-color: #0D5990;
+}
+.footer-legalese{
+  background-color: #A3D4F7;
+  padding: 20px;
+}
+
+.footer-copyright span{
+  font-size: 14px;
+  font-family: 'Roboto';
+  color: #0D5990;
+ 
+}
+.TermsUse{
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Roboto';
+
+}
+.TermsUse a{
+  text-decoration: none;
+  color: #0D5990;
+}
+.listSearch{
+  width: 40vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  position: absolute;
+
+  top:20%;
+  z-index: 5;
+  border-radius: 20px;
+  margin-top: 10px;
+
+}
+.listMember{
+  background-color: #A3D4F7;
+  width: 100%;
+  padding: 10px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #0D5990;
+  
+}
+.listMember:nth-child(1){
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.listMember:nth-last-child(1){
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.listMember:hover{
+  background-color: #8cb5d2;
+  transition: .2s;
+}
+@media (max-width:320px) {
+  
+}
+
+@media (max-width:375px) {
+  
+}
+@media (max-width:425px) {
+  
+}
+@media (max-width:768px) {
+  .ListOfCities{
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+  }
+  .ListOCWrapper{
+    width: 90vw;
+  }
+  .AcrossTheWorldWrapper{
+    width: 90vw;
+  }
+  .City{
+    width: 100%;
+    margin-left: 0;
+  }
+  .pretraga{
+    align-items: center !important;
+  }
+  
+}
+@media (max-width:1024px) {
+  
+
+  
+}
+
+@media (max-width:1440px) {
+  
+}
+@media (max-width:2560px) {
+  
+}
