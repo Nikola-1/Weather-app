@@ -17,8 +17,9 @@ export default function Search() {
               console.log(response)
               return response.json();
             }).then(function(response){
-                console.log(response);
-               setListTown(response);
+                const filtriranResponse = response.filter((item,index,self)=>index === self.findIndex((t)=> t.name === item.name));
+                console.log(filtriranResponse);
+               setListTown(filtriranResponse);
                
             })
            }

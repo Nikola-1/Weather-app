@@ -72,11 +72,42 @@ hr{
 }
 .hour_forecast{
     background-color: #528CB7;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     padding: 10px;
 }
 .hour_forecast_div{
     border-top: 1px solid #fff;
     width: 100%;
+  
+}
+.daily_forecast{
+    border-top: 1px solid #fff;
+    width: 100%;
+}
+.div_daily_block{
+    background-color: #528CB7;
+    border-radius: 10px;
+  
+}
+
+.sekcija_temp{
+    width: 400px;
+    height: 5px;
+    background: linear-gradient(90deg, rgb(227,91,65) 0%, rgb(241,221,69),rgb(198,235,91), rgb(114,249,206,255));
+    
+}
+.sekcija_boje{
+    height: 100px;
+    margin-bottom: 100px;
+}
+.sekcija_pressure{
+    width: 400px;
+    height: 5px;
+    background: linear-gradient(90deg, rgb(230,235,79) 10%, rgb(186,248,127) 25%,  rgb(186,234,100) 25%,rgb(236,108,63) );
+}
+.section2{
+    background-color: #f1dd45;
+}
+.section3{
+    background-color: #c0f778;
 }

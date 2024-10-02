@@ -4,9 +4,11 @@
 import './App.css'
 import AcrossWorld from './components/index/AcrossWorld'
 import Info from './components/info/Info.jsx'
+
 import Header from './components/index/Header'
 import NavigationFooter from './components/fixed/NavigationFooter'
 import { BrowserRouter as Router , Route, Routes } from 'react-router-dom'
+
 
 // eslint-disable-next-line no-unused-vars
 
@@ -28,8 +30,10 @@ function App() {
 	  
 	  </Route>
 	  <Route path="/info" element={<Info/>}>
-	  
+	 
 	  </Route>
+	  <Route path="/poSatima" element={<Info/>}/>
+	  <Route path="/Radar" element={<Info/>}/>
 	  </Routes>
 	  </Router>
       <NavigationFooter></NavigationFooter>

@@ -211,6 +211,11 @@ span{
   background-color: #8cb5d2;
   transition: .2s;
 }
+.poSatima_block{
+  background-color: #528CB7;
+  border-radius: 10px;
+  
+}
 @media (max-width:320px) {
   
 }
