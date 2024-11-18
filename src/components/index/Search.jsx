@@ -12,7 +12,7 @@ export default function Search() {
         
         function getListOfTowns(city,country){
            if(city != ''){
-            fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=3&appid=2bec3798091aad42691ee40c041909e6`)
+            fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=3&appid=dbcdebe95180884276f64dfd197039de`)
             .then(function(response){
               console.log(response)
               return response.json();
@@ -32,7 +32,7 @@ export default function Search() {
             setTown(town);
            
           
-          fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${town}&limit=40&appid=2bec3798091aad42691ee40c041909e6`)
+          fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${town}&limit=40&appid=dbcdebe95180884276f64dfd197039de`)
             .then(function(response){
               console.log(response)
               return response.json();
@@ -45,7 +45,7 @@ export default function Search() {
         function handleLat(){
             console.log(town)
             // eslint-disable-next-line no-unused-vars
-            const town2=fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${town},RS&limit=40&appid=2bec3798091aad42691ee40c041909e6`)
+            const town2=fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${town},RS&limit=40&appid=dbcdebe95180884276f64dfd197039de`)
             .then(function(response){
               console.log(response)
                 return response.json();
