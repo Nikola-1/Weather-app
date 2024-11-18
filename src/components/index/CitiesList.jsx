@@ -27,7 +27,7 @@ export default function CitiesList({town,lat,long}){
         try{
           console.log(town);
           console.log(lat,long)
-            const data2= fetch(`http://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}
+            const data2= fetch(`https://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}
                 `).then(function(response) {
                   return response.json();
                 }).then(function(response){
@@ -49,7 +49,7 @@ export default function CitiesList({town,lat,long}){
       var ukupnaTemperatura=0;
       var prosecnaTemperatura=0;
       
-     const lista=await fetch(`http://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}`);
+     const lista=await fetch(`https://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}`);
      const podaci=await lista.json();
     
         for(var i =0;i< podaci.list.length;i++){
@@ -67,7 +67,7 @@ export default function CitiesList({town,lat,long}){
     
    async function fetchGeoCoding(){
     try{
-      const data3=await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${town},RS&limit=40&appid=${geoCodingApi.key}`)
+      const data3=await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${town},RS&limit=40&appid=${geoCodingApi.key}`)
       .then(function(response){
         return response.json();
       }).then(function(response){
