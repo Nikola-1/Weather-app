@@ -40,7 +40,7 @@ export default function Info(){
     async function slika(latParam,longParam){
        
   
-        fetch(`http://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}`).then(
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}`).then(
           function(response){
               return response.json();
           }
@@ -69,7 +69,7 @@ export default function Info(){
          
           console.log(lat,lon)
             // eslint-disable-next-line no-unused-vars
-            const data2= fetch(`http://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}
+            const data2= fetch(`https://api.openweathermap.org/data/2.5/forecast?id=524901&lat=${latParam}&lon=${longParam}&units=metric&appid=${api.key}
                 `).then(function(response) {
                   return response.json();
                 }).then(function(response){
