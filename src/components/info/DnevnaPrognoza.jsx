@@ -33,7 +33,7 @@ function DnevnaPrognoza() {
     {noviNiz.map((prognoza,index)=> <div key={index} className='text-black daily_forecast d-flex justify-content-between align-items-center p-3'>
             <div className='d-flex justify-content-center align-items-center'>
             <div className='d-flex flex-column justify-content-center align-items-center p-3 '>
-            <h3 >{new Date(prognoza.dt * 1000).getDay()<= new Date().getDay() ? "Today" : daniUNedelji[new Date(prognoza.dt*1000).getDay()]}</h3>
+            <h3 >{new Date(prognoza.dt * 1000).getDay()== new Date().getDay() ? "Today" : daniUNedelji[new Date(prognoza.dt*1000).getDay()]}</h3>
             <p><Moment date={new Date(prognoza.dt *1000)} format="DD.MM"/></p>
            
             </div>
